@@ -2,8 +2,9 @@
   "ProjectName": "32 Bits",
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
+  "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T22:41:09.560+01:00",
-  "LastSaveTime": "2025-10-24T22:43:49.931+01:00",
+  "LastSaveTime": "2025-10-25T00:08:06.621+01:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -12,61 +13,80 @@
   "Prefs_SimPaused": false,
   "Prefs_SimTargetStepsPerSecond": 1000,
   "Prefs_SimStepsPerClockTick": 250,
+  "Perfs_PinIndicators": 0,
+  "StepsRanSinceCreated": 2901986,
+  "TimeSpentSinceCreated": {
+    "StartFrom": "00:48:23.9733534"
+  },
   "AllCustomChipNames":[
     "NOT",
     "AND",
     "OR",
     "XOR",
-    "XNOR"
+    "XNOR",
+    "1B Adder",
+    "2B Adder",
+    "4B Adder",
+    "8B Adder",
+    "16B Adder",
+    "32B Adder"
   ],
   "StarredList":[
+    {
+      "Name":"GATES",
+      "IsCollection":true
+    },
+    {
+      "Name":"ALU",
+      "IsCollection":true
+    },
+    {
+      "Name":"MERGE/SPLIT",
+      "IsCollection":true
+    },
     {
       "Name":"IN/OUT",
       "IsCollection":true
     },
     {
-      "Name":"NAND",
-      "IsCollection":false
+      "Name":"BASIC",
+      "IsCollection":true
     },
     {
-      "Name":"NOT",
-      "IsCollection":false
+      "Name":"BUS",
+      "IsCollection":true
     },
     {
-      "Name":"AND",
-      "IsCollection":false
+      "Name":"DISPLAY",
+      "IsCollection":true
     },
     {
-      "Name":"OR",
-      "IsCollection":false
+      "Name":"MEMORY",
+      "IsCollection":true
     },
     {
-      "Name":"XOR",
-      "IsCollection":false
-    },
-    {
-      "Name":"XNOR",
-      "IsCollection":false
+      "Name":"OTHER",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
     {
       "Chips":["NAND","CLOCK","PULSE","KEY","3-STATE BUFFER"],
-      "IsToggledOpen":false,
+      "IsToggledOpen":true,
       "Name":"BASIC"
     },
     {
-      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8","IN-16","OUT-16","IN-32","OUT-32"],
       "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT"],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT"],
       "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
     {
-      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32"],
       "IsToggledOpen":false,
       "Name":"BUS"
     },
@@ -79,6 +99,50 @@
       "Chips":["ROM 256×16"],
       "IsToggledOpen":false,
       "Name":"MEMORY"
+    },
+    {
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    },
+    {
+      "Chips":["OR","XOR","AND","NOT","XNOR"],
+      "IsToggledOpen":false,
+      "Name":"GATES"
+    },
+    {
+      "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder"],
+      "IsToggledOpen":true,
+      "Name":"ALU"
+    }
+  ],
+  "pinBitCounts":[
+    "1",
+    "4",
+    "8",
+    "16",
+    "32"
+  ],
+  "SplitMergePairs":[
+    {
+      "Key":"8",
+      "Value":"4"
+    },
+    {
+      "Key":"8",
+      "Value":"1"
+    },
+    {
+      "Key":"4",
+      "Value":"1"
+    },
+    {
+      "Key":"16",
+      "Value":"8"
+    },
+    {
+      "Key":"32",
+      "Value":"16"
     }
   ]
 }
