@@ -4,7 +4,7 @@
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T22:41:09.560+01:00",
-  "LastSaveTime": "2025-10-25T00:08:06.621+01:00",
+  "LastSaveTime": "2025-10-25T00:24:33.718+01:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -14,9 +14,9 @@
   "Prefs_SimTargetStepsPerSecond": 1000,
   "Prefs_SimStepsPerClockTick": 250,
   "Perfs_PinIndicators": 0,
-  "StepsRanSinceCreated": 2901986,
+  "StepsRanSinceCreated": 3887683,
   "TimeSpentSinceCreated": {
-    "StartFrom": "00:48:23.9733534"
+    "StartFrom": "01:04:51.0705078"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -29,7 +29,9 @@
     "4B Adder",
     "8B Adder",
     "16B Adder",
-    "32B Adder"
+    "32B Adder",
+    "32XOR",
+    "ALU"
   ],
   "StarredList":[
     {
@@ -81,7 +83,7 @@
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT"],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT"],
       "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
@@ -106,14 +108,19 @@
       "Name":"OTHER"
     },
     {
-      "Chips":["OR","XOR","AND","NOT","XNOR"],
-      "IsToggledOpen":false,
+      "Chips":["32XOR","OR","XOR","AND","NOT","XNOR"],
+      "IsToggledOpen":true,
       "Name":"GATES"
     },
     {
       "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"ALU"
+    },
+    {
+      "Chips":["ALU"],
+      "IsToggledOpen":true,
+      "Name":"CPU"
     }
   ],
   "pinBitCounts":[
@@ -143,6 +150,10 @@
     {
       "Key":"32",
       "Value":"16"
+    },
+    {
+      "Key":"32",
+      "Value":"1"
     }
   ]
 }
