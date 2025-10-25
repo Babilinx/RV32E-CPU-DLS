@@ -1,10 +1,10 @@
 {
-  "ProjectName": "RV32E-CPU-DLS",
+  "ProjectName": "RV32E",
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T23:41:09.560+02:00",
-  "LastSaveTime": "2025-10-25T16:22:19.841+02:00",
+  "LastSaveTime": "2025-10-25T16:49:59.533+02:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -16,7 +16,7 @@
   "Perfs_PinIndicators": 0,
   "StepsRanSinceCreated": 441750739,
   "TimeSpentSinceCreated": {
-    "StartFrom": "03:43:39.8616540"
+    "StartFrom": "03:46:22.7423855"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -80,83 +80,43 @@
       "IsCollection":true
     },
     {
-      "Name":"2BIT REG",
-      "IsCollection":false
-    },
-    {
-      "Name":"8BIT REG",
-      "IsCollection":false
-    },
-    {
-      "Name":"32BIT REG",
-      "IsCollection":false
-    },
-    {
-      "Name":"15x32BIT REGS",
-      "IsCollection":false
-    },
-    {
-      "Name":"8BIT BUF",
-      "IsCollection":false
-    },
-    {
-      "Name":"32BIT BUF",
-      "IsCollection":false
-    },
-    {
-      "Name":"32BIT REG EN",
-      "IsCollection":false
-    },
-    {
-      "Name":"5-16 DECODER",
-      "IsCollection":false
-    },
-    {
-      "Name":"32BIT x2 DMUX",
-      "IsCollection":false
-    },
-    {
-      "Name":"32BIT-5BIT x15 MUX",
-      "IsCollection":false
-    },
-    {
-      "Name":"5-16 DECODER EN",
-      "IsCollection":false
+      "Name":"DE/ENCODERS",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
     {
       "Chips":["NAND","CLOCK","PULSE","KEY","3-STATE BUFFER"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"BASIC"
     },
     {
       "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8","IN-16","OUT-16","IN-32","OUT-32","IN-5","OUT-5"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
       "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT","8-32BIT","32-8BIT","1-5BIT","5-1BIT"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
     {
       "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32","BUS-5"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"BUS"
     },
     {
       "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"DISPLAY"
     },
     {
       "Chips":["ROM 256×16"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","2BIT REG","8BIT REG","32BIT REG","15x32BIT REGS","8BIT BUF","32BIT BUF","5-16 DECODER"],
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","32BIT-5BIT x15 MUX"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
@@ -171,9 +131,19 @@
       "Name":"ALU"
     },
     {
-      "Chips":["ALU"],
+      "Chips":["ALU","15x32BIT REGS"],
       "IsToggledOpen":true,
       "Name":"CPU"
+    },
+    {
+      "Chips":["2BIT REG","8BIT REG","32BIT REG"],
+      "IsToggledOpen":true,
+      "Name":"REGISTERS"
+    },
+    {
+      "Chips":["5-16 DECODER EN","5-16 DECODER"],
+      "IsToggledOpen":false,
+      "Name":"DE/ENCODERS"
     }
   ],
   "pinBitCounts":[
