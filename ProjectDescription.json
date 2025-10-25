@@ -1,20 +1,22 @@
 {
-  "ProjectName": "32-Bits",
-  "DLSVersion_LastSaved": "2.1.6.10",
-  "DLSVersion_EarliestCompatible": "2.0.0.0",
+  "ProjectName": "RV32E",
+  "DLSVersion_LastSaved": "2.1.6",
+  "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
-  "CreationTime": "2025-10-24T22:41:09.560+01:00",
-  "LastSaveTime": "2025-10-25T13:05:10.899+01:00",
+  "CreationTime": "2025-10-24T23:41:09.560+02:00",
+  "LastSaveTime": "2025-10-25T17:53:32.883+02:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
   "Prefs_Snapping": 2,
   "Prefs_StraightWires": 2,
-  "Prefs_SimTargetStepsPerSecond": 1000,
-  "Prefs_SimStepsPerClockTick": 250,
-  "StepsRanSinceCreated": 10172198,
+  "Prefs_SimPaused": true,
+  "Prefs_SimTargetStepsPerSecond": 10000000,
+  "Prefs_SimStepsPerClockTick": 4,
+  "Perfs_PinIndicators": 0,
+  "StepsRanSinceCreated": 441750739,
   "TimeSpentSinceCreated": {
-    "StartFrom": "02:49:40.8764596"
+    "StartFrom": "03:46:50.3953872"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -39,7 +41,16 @@
     "32BIT XOR",
     "EQ 32BIT ",
     "LESS(SIGNED) 32BIT",
-    "LOW(UNSIGNED) 32BIT"
+    "LOW(UNSIGNED) 32BIT",
+    "2BIT REG",
+    "8BIT REG",
+    "32BIT REG",
+    "15x32BIT REGS",
+    "8BIT BUF",
+    "32BIT BUF",
+    "5-16 DECODER",
+    "32BIT-5BIT x15 MUX",
+    "5-16 DECODER EN"
   ],
   "StarredList":[
     {
@@ -77,63 +88,80 @@
     {
       "Name":"OTHER",
       "IsCollection":true
+    },
+    {
+      "Name":"DE/ENCODERS",
+      "IsCollection":true
+    },
+    {
+      "Name":"CPU",
+      "IsCollection":true
+    },
+    {
+      "Name":"REGISTERS",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
     {
-      "Chips":["CLOCK","PULSE","KEY","3-STATE BUFFER"],
-      "NestedCollections":[],
+      "Chips":["NAND","CLOCK","PULSE","KEY","3-STATE BUFFER"],
+      "IsToggledOpen":false,
       "Name":"BASIC"
     },
     {
-      "Chips":[],
-      "NestedCollections":[{"Chips":["IN-1","OUT-1"],"NestedCollections":[],"Name":"1-bit"},{"Chips":["IN-4","OUT-4"],"NestedCollections":[],"Name":"4-bit"},{"Chips":["IN-8","OUT-8"],"NestedCollections":[],"Name":"8-bit"},{"Chips":["IN-16","OUT-16"],"NestedCollections":[],"Name":"16-bit"},{"Chips":["IN-32","OUT-32"],"NestedCollections":[],"Name":"32-bit"}],
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8","IN-16","OUT-16","IN-32","OUT-32","IN-5","OUT-5"],
+      "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT","8-32BIT","32-8BIT"],
-      "NestedCollections":[],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT","8-32BIT","32-8BIT","1-5BIT","5-1BIT"],
+      "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
     {
-      "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32"],
-      "NestedCollections":[],
+      "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32","BUS-5"],
+      "IsToggledOpen":false,
       "Name":"BUS"
     },
     {
       "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED"],
-      "NestedCollections":[],
+      "IsToggledOpen":false,
       "Name":"DISPLAY"
     },
     {
       "Chips":["ROM 256×16"],
-      "NestedCollections":[],
+      "IsToggledOpen":false,
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","TOUCHSCREEN RGB DISPLAY"],
-      "NestedCollections":[],
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","32BIT-5BIT x15 MUX"],
+      "IsToggledOpen":true,
       "Name":"OTHER"
     },
     {
-      "Chips":["8 INPUT AND","32BIT XOR","8BIT XOR","NAND","4PIN OR","32XOR","OR","XOR","AND","NOT","XNOR"],
-      "NestedCollections":[],
+      "Chips":["32XOR","OR","XOR","AND","NOT","XNOR"],
+      "IsToggledOpen":true,
       "Name":"GATES"
     },
     {
-      "Chips":["EQ","LOW(U)","LESS(S) "],
-      "NestedCollections":[],
-      "Name":"COMPARE"
-    },
-    {
       "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder"],
-      "NestedCollections":[],
+      "IsToggledOpen":true,
       "Name":"ALU"
     },
     {
-      "Chips":["ALU"],
-      "NestedCollections":[],
+      "Chips":["ALU","15x32BIT REGS"],
+      "IsToggledOpen":false,
       "Name":"CPU"
+    },
+    {
+      "Chips":["2BIT REG","8BIT REG","32BIT REG"],
+      "IsToggledOpen":false,
+      "Name":"REGISTERS"
+    },
+    {
+      "Chips":["5-16 DECODER EN","5-16 DECODER"],
+      "IsToggledOpen":false,
+      "Name":"DE/ENCODERS"
     }
   ],
   "pinBitCounts":[
@@ -141,7 +169,8 @@
     "4",
     "8",
     "16",
-    "32"
+    "32",
+    "5"
   ],
   "SplitMergePairs":[
     {
@@ -171,7 +200,10 @@
     {
       "Key":"32",
       "Value":"8"
+    },
+    {
+      "Key":"5",
+      "Value":"1"
     }
   ]
-
 }
