@@ -3,13 +3,8 @@
   "DLSVersion_LastSaved": "2.1.6.10",
   "DLSVersion_EarliestCompatible": "2.0.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
-<<<<<<< HEAD
-  "CreationTime": "2025-10-24T23:41:09.560+02:00",
-  "LastSaveTime": "2025-10-25T16:20:00.128+02:00",
-=======
   "CreationTime": "2025-10-24T22:41:09.560+01:00",
   "LastSaveTime": "2025-10-25T13:05:10.899+01:00",
->>>>>>> a2b6c7dbc0f14d4a9aedbdc11c699c77f211ecbf
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -17,16 +12,9 @@
   "Prefs_StraightWires": 2,
   "Prefs_SimTargetStepsPerSecond": 1000,
   "Prefs_SimStepsPerClockTick": 250,
-<<<<<<< HEAD
   "StepsRanSinceCreated": 10172198,
   "TimeSpentSinceCreated": {
     "StartFrom": "02:49:40.8764596"
-=======
-  "Perfs_PinIndicators": 0,
-  "StepsRanSinceCreated": 3913587,
-  "TimeSpentSinceCreated": {
-    "StartFrom": "01:10:20.9081800"
->>>>>>> a2b6c7dbc0f14d4a9aedbdc11c699c77f211ecbf
   },
   "AllCustomChipNames":[
     "NOT",
@@ -42,19 +30,16 @@
     "32B Adder",
     "32XOR",
     "ALU",
-<<<<<<< HEAD
     "4PIN OR",
     "LESS(S) ",
     "LOW(U)",
     "8BIT XOR",
     "EQ",
     "8 INPUT AND",
-    "32BIT XOR"
-=======
+    "32BIT XOR",
     "EQ 32BIT ",
     "LESS(SIGNED) 32BIT",
     "LOW(UNSIGNED) 32BIT"
->>>>>>> a2b6c7dbc0f14d4a9aedbdc11c699c77f211ecbf
   ],
   "StarredList":[
     {
@@ -188,4 +173,5 @@
       "Value":"8"
     }
   ]
+
 }
