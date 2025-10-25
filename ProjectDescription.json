@@ -34,7 +34,13 @@
     "ALU",
     "2BIT REG",
     "8BIT REG",
-    "32BIT REG"
+    "32BIT REG",
+    "15x32BIT REGS",
+    "8BIT BUF",
+    "32BIT BUF",
+    "5-16 DECODER",
+    "32BIT-5BIT x15 MUX",
+    "5-16 DECODER EN"
   ],
   "StarredList":[
     {
@@ -85,6 +91,30 @@
       "Name":"32BIT REG",
       "IsCollection":false
     },
+    {
+      "Name":"15x32BIT REGS",
+      "IsCollection":false
+    },
+    {
+      "Name":"8BIT BUF",
+      "IsCollection":false
+    },
+    {
+      "Name":"32BIT BUF",
+      "IsCollection":false
+    },
+    {
+      "Name":"5-16 DECODER",
+      "IsCollection":false
+    },
+    {
+      "Name":"32BIT-5BIT x15 MUX",
+      "IsCollection":false
+    },
+    {
+      "Name":"5-16 DECODER EN",
+      "IsCollection":false
+    }
   ],
   "ChipCollections":[
     {
@@ -118,7 +148,7 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","2BIT REG","8BIT REG","32BIT REG","15x32BIT REGS","8BIT BUF","32BIT BUF","32BIT REG EN"],
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","2BIT REG","8BIT REG","32BIT REG","15x32BIT REGS","8BIT BUF","32BIT BUF","5-16 DECODER"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
@@ -143,7 +173,8 @@
     "4",
     "8",
     "16",
-    "32"
+    "32",
+    "5"
   ],
   "SplitMergePairs":[
     {
@@ -174,5 +205,9 @@
       "Key":"32",
       "Value":"8"
     },
+    {
+      "Key":"5",
+      "Value":"1"
+    }
   ]
 }
