@@ -1,5 +1,5 @@
 {
-  "ProjectName": "RV32E",
+  "ProjectName": "RV32E-CPU-DLS",
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
@@ -104,7 +104,15 @@
       "IsCollection":false
     },
     {
+      "Name":"32BIT REG EN",
+      "IsCollection":false
+    },
+    {
       "Name":"5-16 DECODER",
+      "IsCollection":false
+    },
+    {
+      "Name":"32BIT x2 DMUX",
       "IsCollection":false
     },
     {
