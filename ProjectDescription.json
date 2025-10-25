@@ -4,7 +4,7 @@
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T23:41:09.560+02:00",
-  "LastSaveTime": "2025-10-25T17:53:32.883+02:00",
+  "LastSaveTime": "2025-10-25T18:24:18.075+02:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -14,9 +14,9 @@
   "Prefs_SimTargetStepsPerSecond": 10000000,
   "Prefs_SimStepsPerClockTick": 4,
   "Perfs_PinIndicators": 0,
-  "StepsRanSinceCreated": 441750739,
+  "StepsRanSinceCreated": 513043781,
   "TimeSpentSinceCreated": {
-    "StartFrom": "03:46:50.3953872"
+    "StartFrom": "04:05:28.1507184"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -50,7 +50,11 @@
     "32BIT BUF",
     "5-16 DECODER",
     "32BIT-5BIT x15 MUX",
-    "5-16 DECODER EN"
+    "5-16 DECODER EN",
+    "2BIT DECODER",
+    "1BIT DECODER",
+    "32BIT 1BIT MUX",
+    "32BIT 2BIT MUX"
   ],
   "StarredList":[
     {
@@ -100,6 +104,10 @@
     {
       "Name":"REGISTERS",
       "IsCollection":true
+    },
+    {
+      "Name":"D/MUX",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
@@ -109,17 +117,17 @@
       "Name":"BASIC"
     },
     {
-      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8","IN-16","OUT-16","IN-32","OUT-32","IN-5","OUT-5"],
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8","IN-16","OUT-16","IN-32","OUT-32","IN-5","OUT-5","IN-2","OUT-2"],
       "IsToggledOpen":false,
       "Name":"IN/OUT"
     },
     {
-      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT","8-32BIT","32-8BIT","1-5BIT","5-1BIT"],
+      "Chips":["1-4BIT","1-8BIT","4-8BIT","4-1BIT","8-4BIT","8-1BIT","8-16BIT","16-8BIT","16-32BIT","32-16BIT","1-32BIT","32-1BIT","8-32BIT","32-8BIT","1-5BIT","5-1BIT","1-2BIT","2-1BIT"],
       "IsToggledOpen":false,
       "Name":"MERGE/SPLIT"
     },
     {
-      "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32","BUS-5"],
+      "Chips":["BUS-1","BUS-4","BUS-8","BUS-16","BUS-32","BUS-5","BUS-2"],
       "IsToggledOpen":false,
       "Name":"BUS"
     },
@@ -134,18 +142,18 @@
       "Name":"MEMORY"
     },
     {
-      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","32BIT-5BIT x15 MUX"],
+      "Chips":["BUTTON","DIPSWITCH","CONST","DETECTOR","RAM-8","EEPROM 256×16","BUZZER","SPS","RTC","8BIT BUF","32BIT BUF","4PIN OR","LESS(S) ","LOW(U)","8BIT XOR","EQ","8 INPUT AND","32BIT XOR","EQ 32BIT ","LESS(SIGNED) 32BIT","LOW(UNSIGNED) 32BIT"],
       "IsToggledOpen":true,
       "Name":"OTHER"
     },
     {
       "Chips":["32XOR","OR","XOR","AND","NOT","XNOR"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"GATES"
     },
     {
       "Chips":["1B Adder","2B Adder","4B Adder","8B Adder","16B Adder","32B Adder"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"ALU"
     },
     {
@@ -159,9 +167,14 @@
       "Name":"REGISTERS"
     },
     {
-      "Chips":["5-16 DECODER EN","5-16 DECODER"],
+      "Chips":["1BIT DECODER","2BIT DECODER","5-16 DECODER","5-16 DECODER EN"],
       "IsToggledOpen":false,
       "Name":"DE/ENCODERS"
+    },
+    {
+      "Chips":["32BIT 1BIT MUX","32BIT 2BIT MUX","32BIT-5BIT x15 MUX"],
+      "IsToggledOpen":true,
+      "Name":"D/MUX"
     }
   ],
   "pinBitCounts":[
@@ -170,7 +183,8 @@
     "8",
     "16",
     "32",
-    "5"
+    "5",
+    "2"
   ],
   "SplitMergePairs":[
     {
@@ -203,6 +217,10 @@
     },
     {
       "Key":"5",
+      "Value":"1"
+    },
+    {
+      "Key":"2",
       "Value":"1"
     }
   ]
