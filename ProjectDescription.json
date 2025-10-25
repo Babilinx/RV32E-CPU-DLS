@@ -4,7 +4,7 @@
   "DLSVersion_EarliestCompatible": "2.0.0",
   "DLSVersion_LastSavedModdedVersion": "1.1.2",
   "CreationTime": "2025-10-24T23:41:09.560+02:00",
-  "LastSaveTime": "2025-10-25T16:49:59.533+02:00",
+  "LastSaveTime": "2025-10-25T17:53:32.883+02:00",
   "Prefs_MainPinNamesDisplayMode": 2,
   "Prefs_ChipPinNamesDisplayMode": 1,
   "Prefs_GridDisplayMode": 1,
@@ -16,7 +16,7 @@
   "Perfs_PinIndicators": 0,
   "StepsRanSinceCreated": 441750739,
   "TimeSpentSinceCreated": {
-    "StartFrom": "03:46:22.7423855"
+    "StartFrom": "03:46:50.3953872"
   },
   "AllCustomChipNames":[
     "NOT",
@@ -82,6 +82,14 @@
     {
       "Name":"DE/ENCODERS",
       "IsCollection":true
+    },
+    {
+      "Name":"CPU",
+      "IsCollection":true
+    },
+    {
+      "Name":"REGISTERS",
+      "IsCollection":true
     }
   ],
   "ChipCollections":[
@@ -132,12 +140,12 @@
     },
     {
       "Chips":["ALU","15x32BIT REGS"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"CPU"
     },
     {
       "Chips":["2BIT REG","8BIT REG","32BIT REG"],
-      "IsToggledOpen":true,
+      "IsToggledOpen":false,
       "Name":"REGISTERS"
     },
     {
